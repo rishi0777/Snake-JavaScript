@@ -1,0 +1,112 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+@font-face {
+    font-family: game1;
+    src: url("../font/iomanoid.ttf");
+}
+@font-face {
+    font-family: game2;
+    src: url("../font/PAC-FONT.TTF");
+}
+
+
+.main{
+    background-color: #ffcd00;
+    background-image: linear-gradient(315deg, #ffcd00 0%, #005238 74%);
+    background-size: 100% 100%;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.main > .game_area{
+    flex: 0.75;
+    display: flex;
+    align-items: center;
+}
+.main > .side_block{
+    flex: 0.15;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.main > .game_area > .ask_to_press_key_cnt{
+    width: 100%;
+    font-weight:500;
+    font-size: 2rem;
+    text-align: center;
+    font-family: game2;
+    line-height: 2;
+}
+.main > .game_area > .board{
+    background-color: #f2cf43;
+    background-image: linear-gradient(315deg, #f2cf43 0%, #19a186 74%);
+    background-size: 100% 100%;
+
+    display: none;
+    height: 93%;
+    width: 100%;
+    grid-template-rows: repeat(21, 1fr);
+    grid-template-columns: repeat(38, 1fr);
+    border-radius: 0.8rem;
+    border: #FFF 0.2rem solid;
+}
+
+.main > .side_block > .score_label{
+    flex: 0.2;
+
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: rgb(48, 54, 41);
+    font-family: game2;
+}
+.main > .side_block > .image_container{
+    flex: 0.55;
+    background-repeat: no-repeat;
+    /*width height already specified in javasscript refer there*/
+}
+
+.main > .side_block > .score_label > .score{
+    text-align: center;
+    font-size: 2.4rem;
+    font-weight: bold;
+    
+    font-family: game1;
+}
+
+
+.head{
+    background-color: #fce043;
+    background-image: linear-gradient(315deg, #fce043 0%, #fb7ba2 74%);
+    border: .25vmin solid white;
+    transform: scale(1.02);
+    border-radius: 50%;
+}
+
+.snake{
+    background-color: #fce043;
+    background-image: linear-gradient(315deg, #fce043 0%, #fb7ba2 74%);
+    border-radius: 50%;
+}
+
+.food{
+    background-color: #e3e3e3;
+    background-image: linear-gradient(147deg, #e3e3e3 0%, #d93965 74%);
+    border-radius: 50%;
+}
+
+.button-49,
+.button-49:after {
+  width: 6.5rem;
+  height: 3rem;
+  line-height: 1rem;
+  font-size: 0.8rem;
+}
+#dialogbox{
+    background-color: #7f5a83;
+    background-image: linear-gradient(315deg, #7f5a83 0%, #0d324d 74%);
+}

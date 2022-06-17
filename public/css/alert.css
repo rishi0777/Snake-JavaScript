@@ -1,0 +1,51 @@
+#dialogoverlay{
+	display: none;
+	opacity: 0.7;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: rgba(43, 42, 51, 1);
+	width: 100%;
+	z-index: 10;
+}
+#dialogbox{
+	display: none;
+	position: fixed;
+    background-color: #ffeaa7;
+    background-image: linear-gradient(315deg, #ffeaa7 0%, #000000 74%);
+	border-radius:1rem; 
+    padding: 3rem;
+	z-index: 10;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#dialogboxhead{ 
+    flex:0.15;
+    font-size:1rem; 
+    font-weight: bold; 
+    font-family: 'Dosis', sans-serif;
+    color:#EE573d;
+    text-align: center; 
+}
+#dialogboxbody{
+    padding-left:2rem;
+    padding-right: 2rem;  
+    flex: 0.28;
+
+    font-size: 0.9rem;
+    font-family: 'Dosis', sans-serif;
+    text-align: center;
+    font-weight: bold;
+    color:#FFF; 
+}
+
+#alert_buttons{
+    display: none;
+    flex: 0.45;
+}
+#confirm_buttons{
+    display: none;
+    flex: 0.55;
+}
+

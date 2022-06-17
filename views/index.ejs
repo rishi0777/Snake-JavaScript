@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon"  href="img/favicon.ico"/>
+    <link rel="stylesheet" href="css/alert.css">
+    <link rel="stylesheet" href="css/button.css">
+    <link rel="stylesheet" href="css/index.css">
+    <title>SNAKE MANIA</title>
+</head>
+<body>
+    <div class="full_screen">
+
+        <div class="not_available_on_phone">
+            <h1>
+                iNsTrUcTiOn
+            </h1>
+            <p>
+                To play the game you must use a laptop.<br>
+                Not available on other devices like phones or tablets.<br>
+                Contact : 
+                <a href="https://mail.google.com/mail/u/0/?fs=1&to=rishimishra244@gmail.com&su=Support_Snake_Mania&body=&bcc=&tf=cm">
+                    rishimishra244@gmail.com</a>
+            </p>
+        </div>
+
+        <div class="main">
+            <div class="alert1">
+            <div id="dialogoverlay">
+            </div>
+
+            <div id="dialogbox">
+                <div id="dialogboxhead"></div>
+                <div id="dialogboxbody"></div>
+
+                <div id="alert_buttons">
+                    <button id="btn_alert" class="button-49_small" role="button">
+                    </button>
+                </div>
+
+                <div id="confirm_buttons">
+                    <button id="btn_confirm_yes" class="button-49_small" role="button">
+                    </button>
+                    <div></div>
+                    <button id="btn_confirm_no" class="button-49_small" role="button">
+                    </button>
+                </div>
+            </div>
+            </div>
+
+            <div class="container">
+            <div>
+                <button id="btn1" class="button-49" role="button">START</button>
+            </div>
+            <div>
+                <button id="btn2" class="button-49" role="button">HIGH SCORE</button>
+            </div>
+            <div>
+                <button id="btn3" class="button-49" role="button">ABOUT</button>
+            </div>
+            </div>
+
+            <form class="name_container" style="display: none;" onsubmit="event.preventDefault();" autocomplete="off">
+            <h1>YOUR NAME</h1>
+            <input id="username" type="text" value="WRITE HERE" oninput="this.value = this.value.toUpperCase()">
+            <button id="proceed" class="button-49_medium" role="button">PROCEED</button>
+            </form>
+        </div>
+
+    </div>
+</body>
+<script src="js/index.js"></script>
+<script src="js/alert.js"></script>
+</html>

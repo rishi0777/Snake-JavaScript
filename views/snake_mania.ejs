@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon"  href="img/favicon.ico"/>
+    <link rel="stylesheet" href="css/alert.css">
+    <link rel="stylesheet" href="css/button.css">
+    <link rel="stylesheet" href="css/snake_mania.css">
+   
+    <title>SNAKE MANIA</title>
+</head>
+
+<body>
+    <div class="main">
+
+        <div class="alert1">
+            <div id="dialogoverlay">
+            </div>
+
+            <div id="dialogbox">
+                <div id="dialogboxhead"></div>
+                <div id="dialogboxbody"></div>
+
+                <div id="alert_buttons">
+                    <button id="btn_alert" class="button-49" role="button">
+                    </button>
+                </div>
+
+                <div id="confirm_buttons">
+                    <button id="btn_confirm_yes" class="button-49" role="button">
+                    </button>
+                    <div></div>
+                    <button id="btn_confirm_no" class="button-49" role="button">
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="game_area">
+            <div class="ask_to_press_key_cnt">
+                111 pRESS sPACE kEY tO sTART tHE gAME tHEN uSE aRROW kEYS tO mOVE tHE sNAKE oTHER kEYS aRE nOT aLLOWEDs
+                CrEdIt RiShI MiShRa 111
+            </div>
+            <div class="board">
+                 <!--contains the grid in which game will take place-->
+            </div>
+        </div>
+        
+        <div class="side_block">
+            <div>
+                <!--just for sake of proper placement of elements-->
+            </div>
+
+            <div class="score_label">
+                <!--contains the image of snake-->
+                sCORE
+                <div class="score">
+                    0
+                </div>
+            </div>
+            <div class="image_container">
+                <!--contains the image of snake-->
+            </div>
+        </div>
+        
+        <!-- this form is not for display purpose its just for passing username and score to express-->
+        <form id="user_details_form" action="/create_user" method="post" style="display: none;">
+            <input id="form_user" type="text" name="username">
+            <input id="form_score" type="text" name="score">
+            
+        </form>
+    </div>
+</body>
+
+
+<script src="js/snake_mania.js"></script>
+<script src="js/alert.js"></script>
+
+</html>

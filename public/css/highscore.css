@@ -1,0 +1,74 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+@font-face {
+    font-family: highscore_heading;
+    src: url("../font/PAC-FONT.TTF");
+}
+
+@font-face {
+    font-family: table_heading;
+    src: url("../font/Halo3.ttf");
+}
+
+@font-face {
+    font-family: table_content;
+    src: url("../font//iomanoid\ back.ttf");
+}
+
+
+.main{
+    display: flex;
+    min-height:100vh;
+    flex-direction: column;
+    justify-content: space-between;
+    background: url("../img/high2.png") no-repeat center center;
+    background-size: 100% 100%;
+}
+
+.heading{
+    flex:0.2;
+    font-family: highscore_heading;
+    color: #FF4136;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.heading > .wrapper{
+    flex: 0.1;
+}
+.heading > h1{
+    flex: 0.5;
+}
+
+.score_area{
+    flex:0.8;
+}
+.score_area > table{
+    width: 100%;
+    height: 80vh;
+}
+
+th{
+    font-family: table_heading;
+    font-size: 1.5rem;
+    text-align: center;
+    color: goldenrod;
+    padding-bottom: 0.5rem;
+   
+}
+
+td{
+    font-family: table_heading;
+    font-weight: bold;
+    text-align: center;
+    color: #FFF;
+    
+}
+@media only screen and (max-width: 1100px) {
+    
+}
+@media only screen and (max-width: 890px) {
+    
+}
