@@ -1,4 +1,4 @@
-#LIVE URL
+# LIVE URL
 ```
 https://mania-snake.herokuapp.com/
 ```
