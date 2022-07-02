@@ -1,3 +1,7 @@
+#LIVE URL
+```
+https://mania-snake.herokuapp.com/
+```
 # About Game
 • Snake is a 2D game hosted on Heroku.<br>
 • Created by using HTML, CSS and JavaScript.<br>
